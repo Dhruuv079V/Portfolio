@@ -1,0 +1,573 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container{
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  margin-top: 130px;
+}
+
+
+             /* Navbar Styling Start */
+
+.nav-bar {
+  display: flex;
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  z-index: 5;
+  align-items: center;
+  background-color: #fffffff3;
+}
+
+
+.portfolio-head{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+} 
+
+.nav-items{
+  display: flex;
+  width: 50%;
+  justify-content: right;
+  margin-right: 50px;
+} 
+
+.layer-1, .layer-2, .layer-3{
+  width: 30px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #000;
+  margin-bottom: 4px;
+  transition: 0.2s ease-in-out;
+}
+
+.hamburger-nav{
+  display: none;
+}
+
+.nav-items ul {
+  display: flex;
+  list-style-type: none;
+}
+
+
+
+.nav-items a{
+  text-decoration: none;
+  color: #000;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: 0.2s ease-in-out;
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.slash {
+  font-size: 0.8rem;
+  padding: 0 2px;
+}
+
+.profession-name {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.portfolio-head a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-items a:hover {
+  color: #596751;
+}
+
+
+
+
+          /* Navbar Styling End */
+
+
+
+             /* card container Styling start */
+
+.card-container {
+  display: flex;
+  min-height: 800px;
+  width: 100%;
+  /* z-index: 2; */
+  align-items: center;
+}
+
+/* -- Background color of whole page  -- */
+.left-body-background{       
+  min-height: 800px;
+  width: 500px;
+  background-color: #1fcfc3;
+  z-index: 3;
+}
+
+
+       /* card & profile style start from here */
+
+.card {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+}
+
+/* profile left card styling start */
+.profile{
+  height: 600px;
+  width: 500px;
+  min-width: 450px;
+  background-color: rgb(12, 213, 200);
+  z-index: 3;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.397);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.profile-pic{
+  height: 205px;
+  width: 205px;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom: 2rem;
+}
+
+.profile h1{
+  margin: -10px;
+  font-weight: 700;
+}
+
+.profile p {
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.line{
+  margin-top: 3rem;
+  border: 2px #596751 solid;
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.profile-items{
+  position: relative;
+  display: flex;
+  bottom: 0;
+  margin-top: 55px;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-items a{
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0 4px;
+}
+
+.profile-items i{
+    transition: 0.2s ease-in-out;
+}
+
+.profile-items i:hover{
+  margin-bottom: 20px;
+  box-shadow: 0px 20px 10px -3px rgba(128, 128, 128, 0.701);
+}
+
+/* profile left card styling end*/
+
+
+/* profile right card styling start*/
+.profile-info { 
+  padding-left: 50px;
+  color: #000;
+  z-index: 3;
+  padding-top: 20px;
+}
+
+.main-heading{
+  font-size: 100px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-heading {
+  font-size: 27px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.link-button div{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-1, .btn-2{
+  display: inline-block;
+  height: 45px;
+  width: 140px;
+  border-radius: 2rem;
+  text-align: center;
+  line-height: 45px;
+  transition: 0.2s ease-in-out;
+  border: 2px solid #596751;
+  cursor: pointer;
+}
+
+.btn-1{
+  background-color: #596751;
+}
+
+.btn-2{
+  background-color: #fff; 
+  border-color: #596751; 
+  margin:  50px 0 80px 2px;
+}
+
+.link-button .btn-2{
+  color: #596751;
+}
+
+.btn-1:hover {
+  color: #596751;
+  background-color: #fff;
+  border-color: 2px solid #596751;
+}
+
+.btn-2:hover{
+  background-color: #596751;
+  border-color: #596751;
+  color: #fff;
+}
+
+
+.my-info{
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 300;
+  width: 420px;
+  height: 100px;
+}
+/* profile right card styling start*/
+
+
+
+.footer-info{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.rights{
+  width: 500px;
+}
+
+.footer-head{
+ font-weight: 600;
+}
+
+.footer-detail{
+  width: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 7rem;
+  text-align: center;
+}
+
+.rights p {
+  padding-left: 10%;
+}
+
+.footer-detail p{
+  margin: 4px 0px;
+}
+
+.social-media-icon a{
+  color: black;
+  margin: 0px 2px;
+}
+
+/* Project Page */
+
+
+
+.card-para{
+  width: 65%;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 50px;
+  margin-top: -30px;
+}
+
+.title-line {
+  background-color: #596751;
+  width: 10px;
+  height:50px;
+  position: absolute;
+  margin-top: 50px;
+}
+
+.sub-card-info {
+  width: 60%;
+}
+
+.project-head, .project-title{
+  margin: 0;
+  margin-left: 30px;
+}
+
+.project-head{
+  font-size: 20px;
+  color: #596751;
+  margin-top: 50px;
+}
+
+.project-title{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.project-para{
+  font-weight: 300;
+  padding: 30px;
+  margin: 0;
+}
+
+.project-img{
+  height: 100%;
+  width: 40%;
+}
+
+.project-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+/* form page Styling */
+
+.form-card{
+  height: 370px;
+  width: 725px;
+  background-color: #fff;
+  display: flex;
+  flex: 1;
+  font-size: 17px;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 30px #0000002f;
+}
+
+form {
+  padding: 60px 50px;
+  width: 100%;
+}
+
+.field{
+  margin-bottom: 35px;
+}
+
+
+.row{
+  display: flex;
+  gap: 60px;
+}
+
+.row div{
+  width: 50%;;
+}
+
+.error-msg {
+  display: flex;
+  color: red;
+  font-size: 13px;
+  align-items: center;
+}
+
+.error-msg i {
+  margin-right: 2px;
+}
+
+
+input, textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 4px;
+  font-size: 15px;
+  border-bottom: 2px solid rgb(92, 86, 86);
+}
+
+/* .hide {
+  display: none;
+}
+
+.field:hover .hide{
+  display: block;
+} */
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+button{
+  border: none;
+  background-color: #596751;
+  color: #fff;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #596751;
+  border: 2px solid #596751;
+}
+
+
+
+
+/* Setting of screen size */
+
+@media (min-width: 890px) and (max-width: 970px){
+  .nav-items{
+    margin-right: 0%;
+  }
+
+  .nav-items a {
+    padding: 8px;
+  }
+
+  .left-body-background{
+    width: 400px;
+  }
+
+  .profile{
+    margin-left: 20px;
+  }
+
+  .my-info{
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 300;
+  width: 350px;
+  height: 100px;
+
+}
+
+}
+
+@media (max-width: 889px) {
+
+
+.left-body-background{
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  bottom: 1;
+}
+
+.profile {
+  margin: 0;
+}
+
+.profile-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex:1;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 120px;
+  background-color: transparent;
+  }
+
+.btn-2{
+  margin-bottom: 0;
+}
+
+
+.card {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+  height: fit-content;
+}
+
+.portfolio-head{
+  width: 70%;
+}
+
+.nav-items ul li{
+  display: none;
+}
+
+.nav-items{
+  margin-right: 15px;
+}
+
+.nav-items ul{
+  margin-right: 0px;
+  padding: 0px;
+}
+
+.hamburger-nav {
+  display: block;
+}
+
+.hamburger-nav:hover .layer-1{
+  transform: rotate(45deg);
+  width: 15px;
+
+}
+
+.hamburger-nav:hover .layer-3{
+  transform: rotate(45deg);
+  width: 15px;
+  float: right;
+}
+
+.hamburger-nav:hover .layer-2{
+  transform: rotate(-45deg);
+}
+}

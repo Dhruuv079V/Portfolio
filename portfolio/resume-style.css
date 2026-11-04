@@ -1,0 +1,129 @@
+.sub-container {
+  background-color: rgb(0, 185, 173);
+}
+
+.cards {
+  align-items: normal;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.page-heading {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  width: 100%;
+  margin: 0;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 725px;
+  margin-bottom: 20px;
+}
+
+.sub-card{
+  height: 370px;
+  width: 725px;
+  background-color: #fff;
+  display: flex;
+  font-size: 17px;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 30px #0000002f;
+}
+
+.card-gap{
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.left-sub-card {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 40%;
+}
+
+.left-sub-card p{
+  margin: 0;
+}
+
+.duration {
+  font-size: 20px;
+  color: #596751;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.head{
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 7px;
+}
+
+.sub-head{
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 21px;
+}
+
+.location {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.right-sub-card {
+  font-weight: 300;
+  width: 60%;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.card-info{
+  width: 90%;
+  margin-top: 140px;
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.download-btn {
+  height: 40px;
+  width: 150px;
+  background-color: #596751;
+  border: 2px solid #596751;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.download-btn a {
+  color: #fff;
+}
+
+.download-btn:hover a {
+  color: #000;
+  font-weight: 500 ;
+}
+
+.download-btn:hover {
+  background-color: transparent;
+}
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="resume-style.css">
+</head>
+<body>
+  <!-- Navbar Start -->
+  <nav class="nav-bar">
+    <div class="portfolio-head">
+      <p><a href="index.html"><span class="profile-name">Dhruv Verma</span> <span class="slash"> / </span> <span class="profession-name">Software Engineer</span></a></p>
+    </div>
+    <div class="nav-items">
+      <ul>
+        <li class="nav-item"><a href="index.html">About Me</a></li>
+        <li class="nav-item"><a href="resume.html">Resume</a></li>
+        <li class="nav-item"><a href="project.html">Project</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  </nav>
+  <!-- Navbar End -->
+  <div class="main-container">
+
+    <div class="sub-container">
+
+      <div class="cards">
+        <h1>Let's talk</h1>
+        <div class="form-card">
+          <form action="">
+
+            <div class="row">
+
+              <div class="field error">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name">
+                <div class="hide error-msg"><i class="fa-solid fa-circle-exclamation "></i>Enter First Name</div>
+              </div>
+
+              <div class="field error">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name">
+                <div class="hide error-msg"><i class="fa-solid fa-circle-exclamation "></i>Enter Last Name</div>
+              </div>
+
+            </div>
+
+            <div class="field">
+              <label for="mail">Email *</label>
+              <input type="email" name="mail" id="mail">
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" id="subject">
+            </div>
+
+            <div class="field">
+              <label for="msg">Message</label>
+              <textarea name="msg" id="msg"></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <footer>
+    <div class="footer-info">
+        <div class="rights">
+          <p>	&copy; 2026 by Dhruv Verma</p>
+        </div>
+        <div class="footer-detail">
+          <div class="call">
+            <p class="footer-head">Call</p>
+            <p>123-456-7890</p>
+          </div>
+          <div class="mail">
+            <p class="footer-head">Mail</p>
+            <p>info@gmail.com</p>
+          </div>
+          <div class="social-media-icon">
+            <p class="footer-head">Follow</p>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
